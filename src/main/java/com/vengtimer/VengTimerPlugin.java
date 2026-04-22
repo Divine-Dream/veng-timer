@@ -94,12 +94,12 @@ public class VengTimerPlugin extends Plugin
 
 		vengeTimers.put(player, Instant.now().plusSeconds(30));
 
-		client.addChatMessage(
+		/*client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
 				player.getName() + " cast Vengeance!",
 				null
-		);
+		);*/
 	}
 
 	@Subscribe
@@ -132,12 +132,12 @@ public class VengTimerPlugin extends Plugin
 
 		vengeOtherTimers.put(player, Instant.now().plusSeconds(30));
 
-		client.addChatMessage(
+		/*client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
 				player.getName() + " cast Vengeance Other!",
 				null
-		);
+		);*/
 	}
 
 	@Subscribe
@@ -168,12 +168,12 @@ public class VengTimerPlugin extends Plugin
 			{
 				if (player != null)
 				{
-					client.addChatMessage(
+					/*client.addChatMessage(
 							ChatMessageType.GAMEMESSAGE,
 							"",
 							player.getName() + " Vengeance READY",
 							null
-					);
+					);*/
 				}
 				return true;
 			}
@@ -188,12 +188,12 @@ public class VengTimerPlugin extends Plugin
 			{
 				if (player != null)
 				{
-					client.addChatMessage(
+					/*client.addChatMessage(
 							ChatMessageType.GAMEMESSAGE,
 							"",
 							player.getName() + " Vengeance Other READY",
 							null
-					);
+					);*/
 				}
 				return true;
 			}
